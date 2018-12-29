@@ -5,6 +5,10 @@
             <label>列表页面</label>
             <router-link to="/pages/list">list</router-link>
         </div>
+        <div>
+            <label>Hello页面</label>
+            <router-link to="/pages/hello">hello</router-link>
+        </div>
     </div>
 
 </template>
@@ -14,7 +18,7 @@
         name: 'index',
         data () {
             return {
-                msg: "我是home 组件"
+                msg: "我是pages/index.vue"
             }
         }
     }

@@ -2,6 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import index from '../pages/index.vue';
 import list from '../pages/list.vue';
+import hello from '../pages/hello.vue';
 Vue.use(Router)
 
 export default new Router({
@@ -21,6 +22,13 @@ export default new Router({
             },
             name: 'list',
             component: list
+        },{
+            path: '/pages/hello',
+            meta: {
+                title: 'hello world页'
+            },
+            name: 'hello',
+            component: hello
         },
 
     ]
