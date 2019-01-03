@@ -3,7 +3,7 @@ function resolve(dir) {
     return path.join(__dirname, dir)
 }
 module.exports = {
-    baseUrl: './',
+    baseUrl: '/v-t/build/',
     outputDir: 'build',
     assetsDir: 'static',
     filenameHashing: false,
