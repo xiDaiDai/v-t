@@ -1,15 +1,21 @@
 <template>
     <div class="hello">
-         FOOTER
+         {{msg}}
     </div>
 </template>
 
 <script>
     export default {
         name: 'Footer',
+        data(){
+            return {
+
+            }
+        },
         props: {
             msg: String
-        }
+        },
+
     }
 </script>
 

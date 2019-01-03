@@ -3,7 +3,7 @@
     <Header></Header>
     <img src="./assets/logo.png">
     <router-view></router-view>
-    <Footer></Footer>
+    <Footer msg="Footer"></Footer>
 
   </div>
 </template>
