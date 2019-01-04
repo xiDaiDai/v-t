@@ -15,6 +15,20 @@ module.exports = {
             .set('components', resolve('src/components'))
             .set('utils', resolve('src/utils'))
             .set('filters', resolve('src/filters'))
+
+        const types = ['vue-modules', 'vue', 'normal-modules', 'normal']
+        types.forEach(type => addStyleResource(config.module.rule('less').oneOf(type)))
+
+
+    },
+    css: {
+        // modules: true,
+        loaderOptions: {
+            // 给 less-loader 传递选项
+            less: {
+                javascriptEnabled: true
+            }
+        }
     },
     devServer: {
         proxy: {
@@ -30,4 +44,14 @@ module.exports = {
     configureWebpack:{
 
     }
+}
+
+function addStyleResource(rule) {
+    rule.use('style-resource')
+        .loader('style-resources-loader')
+        .options({
+            patterns: [
+                path.resolve(__dirname, 'src/theme/theme.less'), // 需要全局导入的less
+            ],
+        })
 }

@@ -22,7 +22,8 @@ export default {
 }
 </script>
 
-<style>
+<style lang="less">
+  @import './theme/theme.less';
   body {
     margin: 0px;
   }
