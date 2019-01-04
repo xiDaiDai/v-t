@@ -21,6 +21,11 @@
     }
 </script>
 
-<style scoped>
-
+<style scoped lang="less">
+.hello{
+    font-size:20px;
+    h1{
+       color:red;
+    }
+}
 </style>
